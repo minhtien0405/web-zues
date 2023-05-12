@@ -1,0 +1,20 @@
+@mixin styleFont($fweight, $fsize, $color, $lheight){
+    font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: $fweight;
+      font-size: $fsize;
+      line-height: $lheight;
+      color: $color;
+};
+@mixin button(){
+    @include styleFont(700, 16px, #ffffff, 20px);
+    padding: 16px 20px;
+    background-color: #532C59;
+    border-radius: 15px;
+    border: none;
+};
+@mixin display($display, $al-item, $ju-content){
+    display: $display;
+    align-items: $al-item;
+    justify-content: $ju-content;
+}
